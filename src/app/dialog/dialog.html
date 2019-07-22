@@ -1,0 +1,15 @@
+<div mat-dialog-content>
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.kardexCard.descripcion" placeholder="Descripcion">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.cantidad" placeholder="Cantidad">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.detalle" placeholder="detalle">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Update</button>
+  </div>
